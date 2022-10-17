@@ -51,7 +51,6 @@
     margin: 0 auto;
 }
 
-
  /* header */
 
  /* logo */
@@ -113,6 +112,16 @@
 .nav-link.current {
     color: var(--blue);
     transition: 0.2s ease-in-out;
+    position: relative;
+}
+.current::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    top: 46px;
+    left: 0;
+    background: var(--blue);
 }
 
 .contacts {
@@ -725,7 +734,6 @@
     display: flex;
     flex-direction: column;
 
-
     margin: 40px;
 }
 
@@ -736,54 +744,56 @@
     letter-spacing: 0.01em;
     color: var(--grey);
 
-    margin-bottom: 4px;
+    display: block;
+    margin-bottom: 5px;
 }
 
 .form-input-wrapper {
-    padding: 11px;
-    margin-bottom: 10px;
-
-    display: flex;
-
+    position: relative;
+    margin-bottom: 15px;
+    width: 100%;
+}
+.form-input {
+    padding: 11px 11px 11px 35px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
 
     color: var(--font-color);
-    font-style: 18px;
+    font-size: 16px;
     line-height: 1.33;
-}
 
-.form-input-wrapper:focus .form-input:active,
+    width: -webkit-fill-available;
+}
+.form-input:active,
 .form-input:focus{
+    border: 1px solid var(--blue);
 
-    border: 1px solid #2196F3;
-    /* fill: var(--blue); */
+    transition: border .2s ease-in-out;
 }
 
-/* .form-intup:active,
-.form-intup:focus .form-input-wrapper {
-    border: 1px solid var(--blue);
-    fill: var(--blue);
-} */
 
 .form-input-svg {
     width: 18px;
     height: 18px;
     display: block;
+
+    position: absolute;
+    top: 50%;
+    left: 10px;
+}
+.form-input:active,
+.form-input:focus + .form-input-svg {
+    fill: #2196F3;
+    transition: fill .2s ease-in-out;
 }
 
-.form-input {
-    width: 100%;
-    border: none;
-    margin: 0 0 0 7px;
-}
 .form-textarea {
     padding: 11px;
     height: 80px;
     resize: none;
 
     color: var(--font-color);
-    font-style: 18px;
+    font-size: 16px;
     line-height: 1.33;
 
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -803,6 +813,8 @@
 .form-textarea:active,
 .form-textarea:focus{
     border: 1px solid var(--blue);
+
+    transition: border .2s ease-in-out;
 }
 
 .policy {

@@ -136,64 +136,66 @@
 
    <main class="main">
 
-        <!-- modal window -->
-        <div class="modal-overlay" id="modal-window">
-            <div class="modal">
-    
-                <button type="button" class="modal-close">
-                    <svg class="modal-close-btn">
-                        <use xlink:href="#modal-close"></use>
-                    </svg>
-                </button>
-    
+    <!-- modal window -->
+    <div class="modal-overlay" id="modal-window">
+        <div class="modal">
+
+            <button type="button" class="modal-close">
+                <svg class="modal-close-btn">
+                    <use xlink:href="#modal-close"></use>
+                </svg>
+            </button>
+
+            <form class="modal-form">
+
                 <h3 class="modal-title">
                     Залиште свої дані, ми вам передзвонимо
                 </h3>
-    
-                <form class="modal-form">
-    
-                    <span class="form-item-name">Ім'я</span>
-                    <div class="form-item">
-                        <svg class="form-item-svg">
-                            <use xlink:href="#form-person"></use>
-                        </svg>
-                        <input class="form-intup" type="text">
-                    </div>
-    
-                    <span class="form-item-name">Телефон</span>
-                    <div class="form-item">
-                        <svg class="form-item-svg">
-                            <use xlink:href="#form-phone"></use>
-                        </svg>
-                        <input class="form-intup" type="text">
-                    </div>
-    
-                    <span class="form-item-name">Пошта</span>
-                    <div class="form-item">
-                        <svg class="form-item-svg">
-                            <use xlink:href="#form-email"></use>
-                        </svg>
-                        <input class="form-intup" type="text">
-                    </div>
-    
-                    <span class="form-item-name">Пошта</span>
-                    <div class="form-item">
-                        <textarea class="form-textarea" placeholder="Введіть текст" col="12"></textarea>
-                    </div>
-    
-                    <div class="policy">
-                        <input class="policy-input" type="checkbox">
-                        <p class="policy-text">
-                            Погоджуюся з розсилкою та приймаю
-                            <a class="policy-link" href="#">Умови договору</a>
-                        </p>
-                    </div>
-                </form>
-    
-                <button type="button" class="btn form-btn">Відправити</button>
-    
-            </div>
+
+                <div class="form-input-wrapper">
+                    <label class="form-label">Ім'я</label>
+                    <input class="form-input" type="text">
+                    <svg class="form-input-svg">
+                        <use xlink:href="#form-person"></use>
+                    </svg>
+                </div>
+
+                <div class="form-input-wrapper">
+                    <label class="form-label">Телефон</label>
+                    <input class="form-input" type="text">
+                    <svg class="form-input-svg">
+                        <use xlink:href="#form-phone"></use>
+                    </svg>
+                </div>
+
+                <div class="form-input-wrapper">
+                    <label class="form-label">Пошта</label>
+                    <input class="form-input" type="text">
+                    <svg class="form-input-svg">
+                        <use xlink:href="#form-email"></use>
+                    </svg>
+                </div>
+
+                <label class="form-label">Коментар</label>
+                <textarea class="form-textarea" placeholder="Введіть текст" col="12"></textarea>
+                
+
+                <div class="policy">
+                    <input class="policy-input" type="checkbox">
+                    <p class="policy-text">
+                        Погоджуюся з розсилкою та приймаю
+                        <a class="policy-link" href="#">Умови договору</a>
+                    </p>
+                </div>
+
+                <div class="btn-wrapper">
+                    <button type="button" class="btn form-btn">Відправити</button>
+                </div>
+            </form>
+
+
         </div>
+    </div>
 
         <h1 class="visually-hidden">Portfolio</h1>
 
@@ -344,86 +346,89 @@
 
    <footer class="footer">
     <div class="container">
-        <ul class="footer-content-wrapper">
-            <li class="footer-col-item">
-                <a href="index.html" class="logo">
-                    Web<span class="studio-footer">Studio</span>
-                </a>
-    
-                <address class="address">
-                    <a class="address-link" href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank" rel="noopener noreferrer nofollow">м. Київ, пр-т Лесі Украінки, 26</a>
-                
-                    <ul class="footer-contacts">
-                        <li class="contact-item footer-contact-item">
-                            <a href="mailto:info@devstudio.com" class="contact-link">info@devstudio.com</a>
+        <div class="footer-wrapper">
+            <ul class="footer-col">
+                <li class="footer-col-item">
+                    <a href="index.html" class="logo">
+                        Web<span class="studio-footer">Studio</span>
+                    </a>
+        
+                    <address class="address">
+                        <a class="address-link" href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank" rel="noopener noreferrer nofollow">м. Київ, пр-т Лесі Украінки, 26</a>
+                    
+                        <ul class="footer-contacts">
+                            <li class="contact-item footer-contact-item">
+                                <a href="mailto:info@devstudio.com" class="contact-link">info@devstudio.com</a>
+                            </li>
+                            <li class="contact-item footer-contact-item">
+                                <a href="tel:+380961111111" class="contact-link">+38 096 111 11 11</a>
+                            </li>
+                        </ul>
+                    </address>
+                </li>
+
+                <li class="footer-col-item">
+                    <h3 class="footer-title">приєднуйтесь</h3>
+
+                    <ul class="card-social">
+                        <li class="social-item">
+                            <a href="#" class="social-link-footer">
+                                <svg class="social-link-item">
+                                    <use xlink:href="#instagram"></use>
+                                </svg>
+                            </a>
                         </li>
-                        <li class="contact-item footer-contact-item">
-                            <a href="tel:+380961111111" class="contact-link">+38 096 111 11 11</a>
+
+                        <li class="social-item">
+                            <a href="#" class="social-link-footer">
+                                <svg class="social-link-item">
+                                    <use xlink:href="#twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li class="social-item">
+                            <a href="#" class="social-link-footer">
+                                <svg class="social-link-item">
+                                    <use xlink:href="#facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li class="social-item">
+                            <a href="#" class="social-link-footer">
+                                <svg class="social-link-item">
+                                    <use xlink:href="#linkedin"></use>
+                                </svg>
+                            </a>
                         </li>
                     </ul>
-                </address>
-            </li>
 
-            <li class="footer-col-item">
-                <h3 class="footer-title">приєднуйтесь</h3>
+                </li>
+            </ul>
 
-                <ul class="card-social">
-                    <li class="social-item">
-                        <a href="#" class="social-link-footer">
-                            <svg class="social-link-item">
-                                <use xlink:href="#instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
+            <ul class="footer-col">
+                <li class="footer-right-item">
+                    <h3 class="footer-title">Підпишіться на розсилку</h3>
 
-                    <li class="social-item">
-                        <a href="#" class="social-link-footer">
-                            <svg class="social-link-item">
-                                <use xlink:href="#twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-
-                    <li class="social-item">
-                        <a href="#" class="social-link-footer">
-                            <svg class="social-link-item">
-                                <use xlink:href="#facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-
-                    <li class="social-item">
-                        <a href="#" class="social-link-footer">
-                            <svg class="social-link-item">
-                                <use xlink:href="#linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-
-            </li>
-
-            <li class="footer-col-item">
-                <h3 class="footer-title">Підпишіться на розсилку</h3>
-
-                <form action="#" class="footer-form">
-                    <div class="footer-form-item">
+                    <form action="#" class="footer-form">
                         <input class="footer-form-input" type="text" placeholder="Email">
-                    </div>
 
-                    <button class="btn btn-footer-form">
-                        Підписатися
-                        <svg class="footer-btn-svg">
-                            <use xlink:href="#footer-btn"></use>
-                        </svg>
+                        <button class="btn btn-footer-form">
+                            Підписатися
+                            <svg class="footer-btn-svg">
+                                <use xlink:href="#footer-btn"></use>
+                            </svg>
 
-                    </button>
-                </form>
+                        </button>
+                    </form>
 
-            </li>
-        </ul>
+                </li>
+            </ul>
+        </div>
     </div>
 </footer>
+
 
     <script src="./js/index.js"></script>
 </body>
