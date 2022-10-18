@@ -51,6 +51,10 @@
     margin: 0 auto;
 }
 
+.section.section-hidden {
+    display: block;
+}
+
  /* header */
 
  /* logo */
@@ -894,4 +898,97 @@
 .btn.btn-footer-form {
     display: flex;
     align-items: center;
+}
+
+
+/* responsive*/
+
+@media (min-width: 1024px) and (max-width: 1240px)  {
+    /* studio */
+    .container {
+        max-width: 974px;
+    }
+    .section {
+        padding: 50px 0;
+    }
+    .section-title {
+        margin-bottom: 30px;
+    }
+    .character {
+        padding: 0 0 0 0;
+    }
+    .character-item {
+        width: 20%;
+    }
+    .about-img {
+        width: 100%;
+        max-width: 300px;
+    }
+    .card-item {
+        width: 22%;
+    }
+    .footer {
+        padding: 50px 0;
+    }
+    .footer-col-item:nth-child(2) {
+        margin-right: 50px;
+    }
+    .section.section-hidden {
+        display: block;
+    }
+
+    /* portfolio */
+    .portfolio-pagination {
+        margin-bottom: 30px;
+    }
+    .portfolio-item {
+        margin-bottom: 15px;
+    }
+    .portfolio-img {
+
+        max-width: 290px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        max-width: 738px;
+        padding: 0 15px;
+    }
+    .header {
+        padding: 20px 0;
+    }
+    .contacts {
+        flex-direction: column;
+    }
+    .contact-item {
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+    .contact-item:last-child{
+        margin-bottom: 0;
+    }
+    .intro-content {
+        padding: 120px 0;
+    }
+    .intro-title{
+        font-size: 26px;
+        line-height: 1.61;
+    }
+
+    .section {
+        padding: 50px 0;
+    }
+    .character {
+        padding: 0 0 0 0;
+        justify-content: space-evenly;
+    }
+    .character-item {
+        width: 45%;
+    }
+    .section.section-hidden {
+        display: none;
+    }
+
+    /* закончил на сексии с командой */
 }
