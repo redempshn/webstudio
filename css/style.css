@@ -998,9 +998,103 @@
     }
     .character-item {
         width: 45%;
+        margin-bottom: 30px;
+    }
+    .character-item:nth-child(3){
+        margin-bottom: 0;
+    }
+    .character-item:nth-child(4){
+        margin-bottom: 0;
     }
     .section.section-hidden {
         display: none;
+    }
+    .section-title {
+        margin-bottom: 30px;
+    }
+    .section-content {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .card-item {
+        margin-bottom: 30px;
+    }
+    .card-item:nth-child(3){
+        margin-bottom: 0;
+    }
+    .card-item:nth-child(4){
+        margin-bottom: 0;
+    }   
+
+
+    .partners-list {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .partners-list-item {
+        width: 30%;
+        margin: 0 0 30px 0;
+    }
+    .partners-list-item:nth-child(4){
+        margin-bottom: 0;
+    }
+    .partners-list-item:nth-child(5){
+        margin-bottom: 0;
+    }
+    .partners-list-item:nth-child(6){
+        margin-bottom: 0;
+    }
+
+    .partners-list-item-link {
+        justify-content: center;
+    }
+
+
+    .footer-col{
+        width: 80%;
+        margin-bottom: 60px;
+    }
+    .footer-col:nth-child(2){
+        margin-bottom: 0;
+    }   
+    .footer-wrapper {
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .footer-col-item:nth-child(2) {
+        margin-right: 0;
+    }
+
+    .footer-col-item {
+        text-align: center;
+    }
+    .address {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .contact-item {
+        margin-bottom: 0px;
+    }
+
+    .footer-right-item {
+        text-align: center;
+    }
+    .footer-form {
+        flex-direction: column;
+    }
+
+    .footer-form {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-form-input {
+        margin: 0 0 20px 0;
+        width: 80%;
     }
 
     /* закончил на сексии с командой */
