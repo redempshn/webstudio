@@ -24,3 +24,24 @@ function foo(){
 
 }
 foo();
+
+
+// burger
+function toggleNavigation() {
+    let burgerBtn = document.querySelector(".burger");
+
+    // let social = document.querySelector(".header-social");
+    // let contact = document.querySelector(".contacts");
+    // let nav = document.querySelector(".nav");
+    let header = document.querySelector(".header");
+
+    burgerBtn.addEventListener("click", () => {
+        burgerBtn.classList.toggle("active");
+
+        // social.classList.toggle("active");
+        // contact.classList.toggle("active");
+        // nav.classList.toggle("active");
+        header.classList.toggle("active");
+    }); 
+}
+toggleNavigation();
