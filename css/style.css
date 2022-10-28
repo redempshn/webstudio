@@ -1338,6 +1338,7 @@
         padding: 60px 0;
     }
     .container {
+        max-width: 538px;
         padding: 0 15px;
     }
 
@@ -1445,5 +1446,138 @@
     .footer-form-input {
         width: -webkit-fill-available;
         margin: 0 0 20px 0;
+    }
+
+
+
+    /* modal */
+    .modal {
+        max-width: 450px;
+    }
+    .modal-form {
+        margin: 30px;
+    }
+    .modal-title{
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .policy-text {
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .policy-link {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    /* portfolio */
+    .portfolio-pagination {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+
+        margin-bottom: 25px;
+    }
+    .pagination-item {
+        margin: 0 8px 15px 0;
+    }
+    .btn-portfolio {
+        border-radius: 4px;
+        background: var(--character-bg);
+    }
+
+    .portfolio-content {
+        justify-content: center;
+    }
+
+    .portfolio-item {
+        width: 80%;
+        border: 1px solid #EEEEEE;
+    }
+    .portfolio-img {
+        max-width: 450px;
+    }
+
+    .portfolio-item:nth-last-child(-n+3) {
+        margin-bottom: 30px;
+    }
+    .portfolio-item:last-child{
+        margin-bottom: 0;
+    }
+}
+
+@media (max-device-width: 425px){
+    .container {
+        max-width: 395px;
+        padding: 0 15px;
+    }
+    .partners-list-item-link {
+        padding: 16px 0px;
+    }
+
+    .modal {
+        max-width: 400px;
+    }
+    .modal-form {
+        margin: 20px;
+    }
+}
+
+@media (max-device-width: 375px){
+    .container {
+        max-width: 355px;
+        padding: 0 10px;
+    }
+    .intro-title {
+        font-size: 33px;
+        line-height: 42px;
+    }
+    .modal {
+        max-width: 350px;
+    }
+}
+
+@media (max-device-width: 320px){
+    .container {
+        max-width: 300px;
+        padding: 0 10px;
+    }
+    .intro-title {
+        font-size: 27px;
+        line-height: 42px;
+    }
+    .partners-list-item-link {
+        padding: 10px 0px;
+    }
+
+    .header.active > .nav > .nav-link-container > .nav-link-item > .nav-link {
+        font-size: 35px;
+        line-height: 45px;
+    }
+    .header.active > .contacts > .contact-item > .contact-link.phone {
+        font-size: 30px;
+    }
+    .header-social-link {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .header.active > .contacts > .contact-item > .contact-link {
+        margin-bottom: 20px;
+    }
+
+    .portfolio-item {
+        width: 100%;
+    }
+
+    .modal {
+        max-width: 300px;
+    }
+    .modal-form {
+        margin: 15px;
+    }
+    .section-title {
+        font-size: 32px;
     }
 }
