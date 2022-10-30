@@ -1,5 +1,7 @@
 'use strict';
 
+let body = document.body;
+
 //modal window
 function foo(){
     let modalBtn = document.querySelectorAll(".modal-btn");
@@ -36,6 +38,7 @@ function toggleNavigation() {
     burgerBtn.addEventListener("click", () => {
         burgerBtn.classList.toggle("active");
         header.classList.toggle("active");
+        body.classList.toggle("no-scroll");
     }); 
 }
 toggleNavigation();
