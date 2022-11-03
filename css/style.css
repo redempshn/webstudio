@@ -1,3 +1,9 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
 :root {
     --white: #ffffff;
     --font-color: #212121;
@@ -43,6 +49,14 @@
     clip-path: inset(50%);
     margin: -1px;
 }
+
+.show {
+    display: block;
+}
+.hidden {
+    display: none;
+}
+
 .container {
     width: 100%;
     max-width: 1220px;
@@ -654,7 +668,6 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--font-color);
-
     outline: none;
     transition: 0.2s ease-in-out;
 }
@@ -670,7 +683,7 @@
 .portfolio-content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 .portfolio-item {
     margin-bottom: 34px;
@@ -682,9 +695,9 @@
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     transition: all 0.2s ease-in-out;
 }
-.portfolio-item:nth-last-child(-n+3){
+/* .portfolio-item:nth-last-child(-n+3){
     margin-bottom: 0;
-}
+} */
 
 .portfolio-img {
     display: block;
@@ -792,6 +805,8 @@
     right: 5px;
     padding: 10px 10px 10px 10px;
 
+    background-color: var(--white);
+
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
 }
@@ -849,7 +864,9 @@
     font-size: 16px;
     line-height: 1.33;
 
-    width: -webkit-fill-available;
+    width: -moz-available;  
+    width: -webkit-fill-available; 
+    width: fill-available;
 }
 .form-input:active,
 .form-input:focus{
@@ -1030,8 +1047,15 @@
     .portfolio-item {
         margin-bottom: 15px;
     }
+    .portfolio-item-title {
+        font-size: 16px;
+        margin: 20px 0 5px 5px;
+    }
+    .portfolio-item-category {
+        font-size: 14px;
+        margin: 0 0 24px 5px;
+    }
     .portfolio-img {
-
         max-width: 290px;
     }
 
@@ -1187,9 +1211,17 @@
         width: 48%;
         border: 1px solid #EEEEEE;
     }
-    .portfolio-item:last-child{
-        margin-top: 34px;
+    .portfolio-item-title {
+        font-size: 16px;
+        margin: 20px 0 5px 10px;
     }
+    .portfolio-item-category {
+        font-size: 14px;
+        margin: 0 0 20px 10px;
+    }
+    /* .portfolio-item:last-child{
+        margin-top: 34px;
+    } */
 }
 
 @media (min-device-width: 320px) and (max-device-width: 568px) {
@@ -1450,7 +1482,9 @@
     }
 
     .footer-form-input {
-        width: -webkit-fill-available;
+        width: -moz-available;  
+        width: -webkit-fill-available; 
+        width: fill-available;
         margin: 0 0 20px 0;
     }
 
@@ -1581,7 +1615,7 @@
         max-width: 300px;
     }
     .modal-form {
-        margin: 15px;
+        margin: 20px;
     }
     .section-title {
         font-size: 32px;

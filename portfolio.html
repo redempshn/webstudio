@@ -175,7 +175,7 @@
 
                 <div class="form-input-wrapper">
                     <label class="form-label">Ім'я</label>
-                    <input class="form-input" type="text">
+                    <input class="form-input" type="name" required>
                     <svg class="form-input-svg">
                         <use xlink:href="#form-person"></use>
                     </svg>
@@ -183,7 +183,7 @@
 
                 <div class="form-input-wrapper">
                     <label class="form-label">Телефон</label>
-                    <input class="form-input" type="text">
+                    <input class="form-input" type="tel" required>
                     <svg class="form-input-svg">
                         <use xlink:href="#form-phone"></use>
                     </svg>
@@ -191,7 +191,7 @@
 
                 <div class="form-input-wrapper">
                     <label class="form-label">Пошта</label>
-                    <input class="form-input" type="text">
+                    <input class="form-input" type="email" required>
                     <svg class="form-input-svg">
                         <use xlink:href="#form-email"></use>
                     </svg>
@@ -202,7 +202,7 @@
                 
 
                 <div class="policy">
-                    <input class="policy-input" type="checkbox">
+                    <input class="policy-input" type="checkbox" required>
                     <p class="policy-text">
                         Погоджуюся з розсилкою та приймаю
                         <a class="policy-link" href="#">Умови договору</a>
@@ -210,7 +210,7 @@
                 </div>
 
                 <div class="btn-wrapper">
-                    <button type="button" class="btn form-btn">Відправити</button>
+                    <button type="submit" class="btn form-btn">Відправити</button>
                 </div>
             </form>
 
@@ -226,24 +226,24 @@
             
             <ul class="portfolio-pagination">
                 <li class="pagination-item">
-                    <button type="button" class="btn-portfolio">Усі</button>
+                    <button type="button" class="btn-portfolio" data-id="Усі">Усі</button>
                 </li>
                 <li class="pagination-item">
-                    <button type="button" class="btn-portfolio">Веб-сайти</button>
+                    <button type="button" class="btn-portfolio" data-id="Веб-сайт">Веб-сайти</button>
                 </li>
                 <li class="pagination-item">
-                    <button type="button" class="btn-portfolio">Додатки</button>
+                    <button type="button" class="btn-portfolio" data-id="Додаток">Додатки</button>
                 </li>
                 <li class="pagination-item">
-                    <button type="button" class="btn-portfolio">Дизайн</button>
+                    <button type="button" class="btn-portfolio" data-id="Дизайн">Дизайн</button>
                 </li>
                 <li class="pagination-item">
-                    <button type="button" class="btn-portfolio">Маркетинг</button>
+                    <button type="button" class="btn-portfolio" data-id="Маркетинг">Маркетинг</button>
                 </li>
             </ul>
 
             <ul class="portfolio-content">
-                <li class="portfolio-item">
+                <!-- <li class="portfolio-item">
                     <div class="portfolio-item-label">
                         <img src="./img/portfolio/portfolio-img-1.jpg" alt="image" class="portfolio-img">
                         <div class="portfolio-label-content">
@@ -358,7 +358,7 @@
                     </div>
                     <h3 class="portfolio-item-title">Growing Business</h3>
                     <p class="portfolio-item-category">Додаток</p>
-                </li>
+                </li> -->
             </ul>
         </div>
     </section>
